@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>cv</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      width: 100%;
+    }
+
+    .container {
+      width: 60%;
+      height: auto;
+      border: 1px solid black;
+      margin: 20px auto;
+    }
+
+    header {
+      width: 100%;
+      height: auto;
+      background-color: blue;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .container header img {
+      width: 100px;
+      height: 130px;
+      margin: 30px 40px;
+      border: 1px solid white;
+    }
+
+    .container header .nama {
+      color: white;
+      margin: 20px 20px;
+    }
+
+    .container header .nama h3 {
+      font-size: 35px;
+      padding-bottom: 15px;
+    }
+
+    .container header .nama .tombol {
+      margin-top: 15px;
+    }
+
+    .container header .nama .tombol button {
+      padding: 7px 13px;
+      border-radius: 15px;
+      border: 1px solid white;
+    }
+
+    main h3 {
+      margin: 10px 20px;
+    }
+
+    main .about {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border-bottom: 1px solid black;
+      padding-bottom: 10px;
+    }
+
+    main .about .me,
+    .kumpul {
+      margin-left: 20px;
+      margin-right: 30px;
+    }
+
+    .kotak {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .kotak form {
+      padding-left: 20px;
+    }
+
+    .kotak form input {
+      margin: 8px 5px;
+    }
+
+    .kotak .alm {
+      margin-left: 10px;
+    }
+
+    button {
+      margin: 7px 20px;
+      padding: 7px 13px;
+    }
+
+    .kotak .alm h4,
+    p {
+      margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 567px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .container header img {
+        width: 150px;
+        height: 170px;
+        margin: 15px 0;
+      }
+
+      .container header .nama .tombol {
+        padding-bottom: 15px;
+      }
+
+      main .about {
+        flex-direction: column;
+        margin-left: 15px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img src="img/logo.jpg" alt="" />
+      <div class="nama">
+        <h3>Milfin Zainul Asiqin</h3>
+        <p>Front and developer</p>
+        <div class="tombol">
+          <button>Download cv</button>
+          <button style="background-color: rgb(87, 248, 135); color: white">
+            read me
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h3>ABOUT ME</h3>
+      <div class="about">
+        <div class="me">
+          <p>
+            Hello! Nama saya Milfin Zainul Asiqin sebagai mahasiswa aktif
+            semester 7 universitas nurul jadid yang ikut program bootcemp pada
+            semester ini dengan mengambil bidang front end developer,dalam
+            pelatihan ini ada 2 sesi,yaitu sesi pertama pembelajaran selama 3
+            bulan dan pengerjaan projeck kordinasi pesantren wali santri
+          </p>
+        </div>
+        <div class="judul">
+          <p>umur:21</p>
+          <p>gmail:milfinzain@gmail.com</p>
+          <p>universitas:Nurul jadid</p>
+          <p>no.Hp:082228124176</p>
+        </div>
+      </div>
+      <h3>KONTAK</h3>
+      <div class="kotak">
+        <form action="">
+          <div class="atas">
+            <input type="text" placeholder="your name" />
+            <input type="text" placeholder="your gmail" />
+          </div>
+          <textarea name="" id="" cols="40" rows="7" placeholder="your messenger"></textarea>
+        </form>
+        <div class="alm">
+          <h4>ADDress</h2>
+            <p>Patemon,bungatan,situbondo</p>
+            <h4>Phone</h2>
+              <p>082228124176</p>
+              <h4>Email</h2>
+                <p>milfinzain@gmail.com</p>
+        </div>
+
+      </div>
+      <button>Submit</button>
+    </main>
+  </div>
+</body>
+
+</html>
