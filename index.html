@@ -17,10 +17,9 @@
     }
 
     .container {
-      width: 60%;
+      width: 100%;
       height: auto;
       border: 1px solid black;
-      margin: 20px auto;
     }
 
     header {
@@ -28,6 +27,7 @@
       height: auto;
       background-color: blue;
       display: flex;
+      justify-content: center;
       flex-direction: row;
     }
 
@@ -49,7 +49,7 @@
     }
 
     .container header .nama .tombol {
-      margin-top: 15px;
+      margin-top: 10px;
     }
 
     .container header .nama .tombol button {
@@ -58,21 +58,25 @@
       border: 1px solid white;
     }
 
+    main {
+      width: 100%;
+    }
+
     main h3 {
-      margin: 10px 20px;
+      margin: 10px 15px;
     }
 
     main .about {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
       border-bottom: 1px solid black;
       padding-bottom: 10px;
     }
 
     main .about .me,
     .kumpul {
-      margin-left: 20px;
+      max-width: 50%;
+      margin-left: 15px;
       margin-right: 30px;
     }
 
@@ -82,10 +86,11 @@
     }
 
     .kotak form {
-      padding-left: 20px;
+      margin-left: 20px;
     }
 
-    .kotak form input {
+    .kotak form input,
+    textarea {
       margin: 8px 5px;
     }
 
@@ -94,7 +99,6 @@
     }
 
     button {
-      margin: 7px 20px;
       padding: 7px 13px;
     }
 
@@ -124,6 +128,9 @@
         margin-left: 15px;
       }
 
+      .kotak {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
@@ -181,7 +188,7 @@
         </div>
 
       </div>
-      <button>Submit</button>
+      <button style="margin:2px 15px;">Submit</button>
     </main>
   </div>
 </body>
